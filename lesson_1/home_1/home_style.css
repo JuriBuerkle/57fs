@@ -1,0 +1,71 @@
+body {
+    background-image:
+     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwF4SjrezB1S35SoG16VpYk2TwSteqcgD0w&s");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(166, 207, 54);
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+.programmirung-languages {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(166, 207, 54);
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    
+}
+
+.foto {
+    border-radius: 50%;
+    width: 250px;
+    /* height: 30px; */
+    border: 2px solid rgb(136, 231, 27);
+    margin: 30px 40px 60px 40px;
+  }
+
+  ul {
+    font-size: 30px;
+    position: absolute;
+    top: 360px;
+    left: 670px;
+    color: gold;
+  }
+
+  .link-to-resume {
+    position: absolute;
+    top: 560px;
+    left: 1250px;
+    color: red;
+}
+
+  .phone {
+    position: absolute;
+    top: 580px;
+    left: 1250px;
+    color: red;
+  }
+
+  .emil {
+    position: absolute;
+    top: 600px;
+    left: 1250px;
+    color: red;
+  }
+
+  

@@ -1,0 +1,44 @@
+/* пример селекторов по тегам */
+
+h1 {
+  text-align: center;
+  color: orangered;
+}
+
+/* селектор по классу */
+/* обращаемся через точку */
+/* классы придумываем сами */
+/* значение для класса пишем в одно слово */
+
+p {
+  color: rgb(194, 227, 10);
+  /* шрифт */
+  font-style: italic;
+}
+
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.blue-text {
+  color: rgb(21, 21, 205);
+}
+
+p > span {
+  font-size: 24px;
+  color: goldenrod;
+}
+
+body {
+  background-color: rgb(40, 79, 117);
+}
+
+h3,
+h4 {
+  color: rgb(131, 234, 131);
+}
+
+.img-prority {
+  width: 400px;
+}
