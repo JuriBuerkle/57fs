@@ -1,28 +1,28 @@
 * {
-    font-family:Georgia, 'Times New Roman', Times, serif; /* Общий шрифт для всего документа */
-    /* margin: 0; Убираем отступы по умолчанию */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Общий шрифт для всего документа */
+  /* margin: 0; Убираем отступы по умолчанию */
 }
 
 li {
-    list-style: none; /* Убираем маркеры списка */
+  list-style: none; /* Убираем маркеры списка */
 }
 
 li::before {
-    content: "⚡"; /* Добавляем маркеры в виде точек */
-    color: #750606; /* Цвет маркеров */
+  content: "⚡"; /* Добавляем маркеры в виде точек */
+  color: #750606; /* Цвет маркеров */
 }
 
 a {
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    color: #750606; /* Цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: #750606; /* Цвет ссылок */
 }
 a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
-    color: #b30000; /* Цвет ссылок при наведении */
+  text-decoration: underline; /* Подчеркивание при наведении */
+  color: #b30000; /* Цвет ссылок при наведении */
 }
 
-h1>span {
-    font-size: 42px; /* Размер заголовка */
-    color: #750606; /* Цвет заголовка */
-    /* text-align: center; Выравнивание по центру */
+h1 > span {
+  font-size: 42px; /* Размер заголовка */
+  color: #750606; /* Цвет заголовка */
+  /* text-align: center; Выравнивание по центру */
 }
