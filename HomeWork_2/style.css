@@ -1,0 +1,54 @@
+*{                          
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {                            /* стили для body */
+    background-color: #ffffff;
+}
+.cars div {                      /* стили для машин */
+    width: 360px;
+    height: 260px;
+    background-color: #f8f8f8;
+    margin: 20px;
+    outline: 1px solid orangered;
+    background-image: url("https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnGacRotJRRIMESNdg5syJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubGbJ5QMb37ur1MESVu91Mb3MQlBglUR%25gcRScH4%25fMbnMd0zJyJGy5QJNrQ%25r99paW8zWuoD%25qogqaaU4l3ilU%25tdcRScHFBBMbnMdg88yJGy579DrQ%25r98R5W8zWu39Hqogqa3Jal3ilUU0dcRScHFpbMbnMdgPoyJGy53YarQ%25r9S1JW8zWunDjqogqaYCJl3ilU%257%25cRScHb6oMbnMdeo4yJGy5765rQ%25r9sRwW8zWubxdqogqaY7el3ilUQTzcRScHb8%25MbnMdoPeyJGy5BubrQ%25r9Se3W8zWuomUqogqaGsel3ilU4GzcRScHF58MbnMdei0yJGy5iRBrQ%25r9S5fW8zWunsJqogqaGR4l3ilURK0cRox9Dbg2drjGg8H7rQbpJg1sW7%25m9orQbucYia%25dJ5%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnGacRotJRRIMESNdg5");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.cars {                   /* контейнер для машин */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.cars div:hover {               /* движение при наведении */
+    background-color: #d61818;
+    background-size: 150%;
+    background-position: left 120% top 50%;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.cars div .descr {            /* кнопка */
+    position: relative;
+    display: inline-block;
+    color: rgb(14, 237, 40);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(52, 21, 230, 0.8);
+    opacity: 0;
+    top: 180px;
+    left: 20px;
+}
+.cars div h2 {               /* заголовок */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.cars div:hover .descr {      /* кнопка при наведении */
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
