@@ -19,7 +19,7 @@
   
   .container {
     width: 95%;
-    background-color: #2274A5;
+    background-color: #1d8aca;
     height: 350px;
     /* включаем свойство flex у родителя позиционируемых элементов */
     display: flex;
