@@ -1,7 +1,7 @@
 body {
     background-image:
      url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwF4SjrezB1S35SoG16VpYk2TwSteqcgD0w&s");
-     background-repeat: no-repeat;
+     background-repeat: no-repeat;/* убираем повтор фона */
      background-size: cover;
 }
 
