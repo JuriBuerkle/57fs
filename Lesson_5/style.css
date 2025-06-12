@@ -17,7 +17,7 @@
   
   ul span {
     background-color: none;
-    font-weight: bold;
+    font-weight: bold;/* жирный шрифт */
   }
   
   header {
@@ -31,9 +31,11 @@
     /* header приклеиться в самом верху страницы */
     top: 0px;
     /* делаем приоритетным при наложении элементов */
-    z-index: 2;
+    z-index: 2;/* приоритет наложения */
+    /* выравниваем элементы внутри header */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/* выравнивание по горизонтали */
+    /* выравнивание по вертикали */
     align-items: center;
   }
   

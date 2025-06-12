@@ -1,6 +1,6 @@
-* {
+* {/* сбрасываем отступы и поля по умолчанию */
   font-family: cursive serif;/* шрифт по умолчанию */
-  box-sizing: border-box;/
+  box-sizing: border-box;/* включаем св-во box-sizing */
 }
 
 body {/* отступы по умолчанию */
@@ -11,18 +11,17 @@ h1 {
   margin: 5%; /* отступ сверху и снизу */
   font-size: 3.5em; /* размер шрифта заголовка */
   top: 0px; /* приклеиваем заголовок к верху страницы */
-  text-align: center; /* выравниваем заголовок по центру */
+  text-align: center; /* выравниваем заголовок по центру */ 
 }
 
 header {
-  width: 100%;
   background-image: url(https://cdn.pixabay.com/photo/2022/11/05/12/57/car-7571770_1280.png);
   background-repeat: no-repeat;/* убираем повтор фона */
   background-size: cover; /* делаем фон адаптивным */
-  color: rgb(223, 170, 170);
+  color: rgb(223, 170, 170);/* цвет шрифта */
   padding: 20px 50px;
   position: sticky;
-  top: 0px;
+  top: 10px;
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -30,19 +29,22 @@ header {
 }
 
 h2 {
-  margin: 20px;
+  margin: 10px; /* отступ сверху и снизу */
+  font-size: 2.5em; /* размер шрифта заголовка */
   text-align: center;
+    color: rgb(166, 207, 54); /* цвет шрифта */
 }
 
 .gallery {
-    background-size: adaptive; /* делаем фон адаптивным */
+    background-size:contain; /* делаем фон адаптивным */
   display: grid;
   grid-auto-rows: 380px; /* высота строк */
     grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); /* адаптивные колонки *//* задаем правило для колонок */
   gap: 5px; /* расстояние между элементами */
+  cursor: pointer; /* курсор при наведении */
 }
 
-.character-card:hover {
+ .character-card:hover {
   font-size: 5em; /* размер шрифта */
   color: tomato;/* цвет шрифта */
   display: flex;/* выравнивание по горизонтали */
@@ -52,7 +54,7 @@ h2 {
   position: relative;
   opacity: 1; /* непрозрачность */
   transition: all 0.9s ease; /* плавный переход */
-}
+} 
 
 .aurus {
   background-image: url(https://aif-s3.aif.ru/images/015/059/0e68d569e6c98143c9904d5a5a7aa7ef.jpg);
@@ -61,49 +63,50 @@ h2 {
 
 .bmw {
   background-image: url(https://www.car-editors.net/bild/load/detail/221952);
-  background-size: cover;
-  
-  
+    background-size: cover;
 }
+
+a {
+    display: block;       /* или inline-block, если нужно */
+    text-decoration: none;
+    color: inherit;
+  }
 
 .audi {
   background-image: url(https://www.autozeitung.de/assets/styles/article_image/public/field/images/audi-e-tron-gt-2021-01.jpg?itok=kvduvRK8);
-  background-size: cover;
 }
 
 .mercedes {
   background-image: url(https://drivar.de/wp-6401f-content/uploads/2024/02/IMG_1706-540x326.jpg);
-  background-size: cover;
 }
 
 .volkswagen {
   background-image: url(https://www.motorsport-total.com/img/2021/210427/298452_w660_h330.webp?ts=1746090309);
-  background-size: cover;
 }
 
 .porsche {
   background-image: url(https://cdn.prod.www.manager-magazin.de/images/1ca0ed94-572e-49ff-a00b-2e4d387e4ac3_w960_r1.778_fpx38_fpy50.jpg);
-  background-size: cover;
+  
+    background-size: cover;
 }
 
 .tesla {
   background-image: url(https://cdn.prod.www.spiegel.de/images/76182360-0001-0004-0000-000000701206_w960_r1.778_fpx33.98_fpy44.97.jpg);
-  background-size: cover;
+   background-size: cover;
 }
 
 .ford {
   background-image: url(https://autodesign.mx/wp-content/uploads/2023/05/IMG_9440.jpg);
-  background-size: cover;
+    background-size: cover;
 }
 
 .chevrolet {
   background-image: url(https://i.auto-bild.de/ir_img/3/8/1/2/0/6/3/Chevrolet-Camaro-ZL1-3797-474x267-95a949ccc3322ee2.jpg?impolicy=article_teaser_mobile);
-  background-size: cover;
+    background-size: cover;
 }
 
 .toyota {
   background-image: url(https://i.ytimg.com/vi/Pf15CU3Q6uU/sddefault.jpg);
-  background-size: cover;
 }
 
 .honda {
@@ -113,5 +116,4 @@ h2 {
 
 .lada {
   background-image: url(https://www.autozeitung.de/assets/styles/article_image/public/field/images/lada-vesta-facelift-2022-01.jpg?itok=9faH8TeM);
-  background-size: cover;
 }

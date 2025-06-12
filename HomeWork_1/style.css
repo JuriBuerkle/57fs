@@ -48,10 +48,10 @@ h2 {
   }
 
   .link-to-resume {
-    position: absolute;
-    top: 560px;
-    left: 1250px;
-    color: red;
+    position: absolute;/* позиция ссылки */
+    top: 560px;/* позиция ссылки */
+    left: 1250px;/* ссылка на резюме */
+    color: red;/* цвет ссылки */
 }
 
   .phone {
