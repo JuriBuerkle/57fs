@@ -1,6 +1,6 @@
 * {
   /* сбрасываем отступы и поля по умолчанию */
-  font-family: cursive serif; /* шрифт по умолчанию */
+  /* font-family: cursive serif; шрифт по умолчанию */
   box-sizing: border-box; /* включаем св-во box-sizing */
 }
 
@@ -11,6 +11,7 @@ body {
 }
 
 h1 {
+  color: rgb(189, 170, 223);
   margin: 5%; /* отступ сверху и снизу */
   font-size: 3.5em; /* размер шрифта заголовка */
   top: 0px; /* приклеиваем заголовок к верху страницы */
@@ -25,23 +26,31 @@ header {
   background-repeat: no-repeat; /* убираем повтор фона */
   background-size: cover; /* делаем фон адаптивным */
   color: rgb(223, 170, 170); /* цвет шрифта */
-  padding: 20px 50px;
-  position: sticky;
-  top: 10px;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px 50px; /* отступы */
+  position: sticky; /* приклеиваем к верху страницы */
+  top: 10px; /* отступ сверху */
+  z-index: 2; /* устанавливаем уровень слоя */
+  /* чтобы заголовок был поверх других элементов */
+  display: flex; /* выравнивание по горизонтали */
+  justify-content: space-between; /* выравнивание по горизонтали */
+  align-items: center; /* выравнивание по вертикали */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* тень */
 }
-
+p {
+  margin: 0; /* убираем отступы */
+  font-size: 1.2em; /* размер шрифта */
+  color: rgb(223, 170, 170); /* цвет шрифта */
+  font-family: "Ribeye Marrow", serif; /* шрифт */
+  text-align: center;
+}
 h2 {
   margin: 10px; /* отступ сверху и снизу */
   font-size: 2.5em; /* размер шрифта заголовка */
   text-align: center;
   color: rgb(166, 207, 54); /* цвет шрифта */
-  font-family: "Splash", cursive;/* шрифт заголовка */
-  font-weight: 400;/* толщина шрифта */
-  font-style: normal;/* стиль шрифта */
+  font-family: "Splash", cursive; /* шрифт заголовка */
+  font-weight: 400; /* толщина шрифта */
+  font-style: normal; /* стиль шрифта */
 }
 
 .gallery {
@@ -51,42 +60,36 @@ h2 {
   grid-template-columns: repeat(
     auto-fill,
     minmax(380px, 7fr)
-  ); /* адаптивные колонки */ /* задаем правило для колонок */
-  gap: 5px; /* расстояние между элементами */
-  cursor: pointer; /* курсор при наведении */
-}
-
-.character-card:hover {
-  font-size: 5em; /* размер шрифта */
-  color: tomato; /* цвет шрифта */
-  display: flex; /* выравнивание по горизонтали */
-  justify-content: center; /* выравнивание по горизонтали */
-  background-position: center; /* выравнивание по вертикали */
-  background-size: cover; /* делаем фон адаптивным */
-  position: relative;
-  opacity: 1; /* непрозрачность */
-  transition: all 0.9s ease; /* плавный переход */
-}
-
-.aurus {
-  background-image: url(https://aif-s3.aif.ru/images/015/059/0e68d569e6c98143c9904d5a5a7aa7ef.jpg);
-  background-size: cover;
-}
-
-.bmw {
+    ); /* адаптивные колонки */ /* задаем правило для колонок */
+    gap: 5px; /* расстояние между элементами */
+    cursor: pointer; /* курсор при наведении */
+  }
+  
+  .character-card:hover {
+    font-size: 5em; /* размер шрифта */
+    color: tomato; /* цвет шрифта */
+    display: flex; /* выравнивание по горизонтали */
+    justify-content: center; /* выравнивание по горизонтали */
+    background-position: center; /* выравнивание по вертикали */
+    background-size: cover; /* делаем фон адаптивным */
+    position: relative;
+    opacity: 1; /* непрозрачность */
+    transition: all 0.9s ease; /* плавный переход */
+  }
+  
+  .bmw {
   background-image: url(https://www.car-editors.net/bild/load/detail/221952);
   background-size: cover;
-}
-
-a {
-  display: block; /* или inline-block, если нужно */
-  text-decoration: none;
-  color: inherit;
 }
 
 .audi {
   background-image: url(https://www.autozeitung.de/assets/styles/article_image/public/field/images/audi-e-tron-gt-2021-01.jpg?itok=kvduvRK8);
   background-size: cover; /* делаем фон адаптивным */
+}
+
+.aurus {
+  background-image: url(https://aif-s3.aif.ru/images/015/059/0e68d569e6c98143c9904d5a5a7aa7ef.jpg);
+  background-size: cover;
 }
 
 .mercedes {
@@ -139,5 +142,34 @@ footer {
   color: white; /* цвет шрифта */
   padding: 20px 50px; /* отступы */
   text-align: center; /* выравнивание по центру */
-  
+}
+
+/* nav {
+  display: none;
+} */
+
+nav a {
+  color: white; /* цвет ссылок */
+  text-decoration: none; /* убираем подчеркивание */
+  padding: 15px 25px; /* отступы */
+}
+
+.burger-menu {
+  font-size: 30px;
+  color: #c70ae8;
+  display: inline;
+  display: none;
+}
+
+@media (max-width: 830px) {
+  header {
+    background-color: rgb(203, 236, 13);
+  }
+  .burger-menu {
+    display: inline; /* показываем бургер-меню */
+  }
+
+  nav {
+    display: none; /* скрываем навигацию по умолчанию */
+  }
 }
