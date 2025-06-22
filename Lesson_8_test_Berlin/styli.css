@@ -1,28 +1,72 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;/* устанавливаем box-sizing для всех элементов */
+  font-family: sans-serif;/* задаем шрифт для всего документа */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0;/* убираем отступы у body */
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
+.header-global {
+  background-color: rgb(235, 221, 193);
+  position: relative;
+
+  z-index: 50;/
+  justify-content: space-between;
+  color: #000;/* задаем цвет текста */
+  min-height: 45px;/* минимальная высота шапки */
+  max-width: 100vw;/* максимальная ширина шапки */
+  margin: 30px 0 0px 0;/* убираем отступы */
+  padding: 10px;/* убираем внутренние отступы */
+  width: 100%;/* ширина шапки 100% */
+}
+
+}
+.institution-title {
+  flex-grow: 1;
+  flex-shrink: 1000;
+  flex-basis: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;  
+}
+
+.institution {
+  display: block;/* делаем элемент блочным */
+  cursor: pointer;/* добавляем курсор указателя */
+
+}
+
+.title {
+  display: block;/* делаем заголовок блочным элементом */
+    font-weight: bold;/* делаем текст заголовка жирным */
+    cursor: pointer; 
+}
+
+.quicklinks {
+  display: flex;/* делаем элемент flex-контейнером */
+  justify-content: center;/* выравниваем элементы по центру */
+  align-items: center;
+}
+
+.quicklinks a {
+  
+  margin: 0 10px;/* добавляем отступы между ссылками */
+  align-items: center;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+text-decoration/* убираем подчеркивание у ссылок */
+  display: flex;/* делаем nav flex-контейнером */ 
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
+.container-grid {
+  margin: 40px 0 50px;
+  display: grid;/* делаем контейнер grid-контейнером */
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+
+ 
+ 
+
+
