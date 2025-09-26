@@ -1,9 +1,9 @@
 body {
-    background-image:
-     url("c:\Users\Zbook\Pictures\Saved Pictures\Juri Bürkle.pngHomeWork_1\Juri Bürkle.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url("Juri Bürkle.png");
     background-size: cover;
+    background-position: center;
+    
+
    
 }
 
