@@ -1,31 +1,39 @@
 body {
-    background-color: #000;
-    color: #fff;
+    color: #ae70f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('data:image/svg+xml,...'); /* Здесь должен быть паттерн как на фоне, но его проще сделать через SVG или изображение. */
+    background-image: url("https://media.istockphoto.com/id/1389405898/photo/binary-matrix.jpg?s=612x612&w=0&k=20&c=1kB1ZmH1aIokkSUO_LHZL-koSgyOtYzui-YLQLhdMoU="); 
 }
 
 .resume-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #000;
+    border-radius: 2%;
+    background-color: #020407d7;
     padding: 20px;
+    background-image: url("");
 }
 
 .header {
+    background-image: url("https://cms-images.mmst.eu/2rj3gcd43pmw/2uyCGYJgt6gWnXBToUA3qi/17a074a5cf2848da72838bd6d2626f1b/ki-prozessor.jpg?q=60&w=1200&fm=webp");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid orange;
-    padding-bottom: 20px;
+    align-items: end;
+    
 }
 
-.contact-info h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: orange;
+h1 {
+    text-align: center;
+    color: #91ca16;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+                             
+.contact-info  {
+    margin: 3%;
+    color: rgb(162, 59, 8);
 }
 
 .contact-info p {
@@ -33,10 +41,11 @@ body {
 }
 
 .profile-photo img {
+    margin-right: 40px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    
     border: 2px solid orange;
 }
 
@@ -45,20 +54,25 @@ body {
 }
 
 .section h2 {
-    color: orange;
+    text-align: center;
+    color: rgb(192, 187, 227);
     border-bottom: 2px solid orange;
     padding-bottom: 5px;
 }
 
 .columns {
     display: flex;
+    justify-content: space-around;
     gap: 50px;
 }
-
+    
 .columns ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.text {
+    color: #ae70f0;
 }
 
 .columns li {
@@ -70,7 +84,7 @@ body {
 }
 
 .entry h3 {
-    color: #fff;
+    color: #c36060;
     margin: 0;
 }
 
