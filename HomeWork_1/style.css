@@ -1,10 +1,9 @@
-body {
-    background-image: url("Juri Bürkle.png");
-    background-size: cover;
-    background-position: center;
-    
 
-   
+
+body {
+    background-image: url("HomeWork_1\J_Buerkle.png"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
