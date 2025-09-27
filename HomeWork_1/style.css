@@ -1,9 +1,12 @@
 
 
 body {
-    background-image: url("HomeWork_1\J_Buerkle.png"); 
+    background-image: url("J_Buerkle.png"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    
+    
 }
 
 h1 {
@@ -26,47 +29,33 @@ h2 {
     text-align: center;
     font-weight: bold;
     color: rgb(166, 207, 54);
-    position: absolute;
     top: 300px;
     left: 500px;
     
 }
 
-.foto {
-    border-radius: 50%;
-    width: 250px;
-    /* height: 30px; */
-    border: 2px solid rgb(136, 231, 27);
-    margin: 30px 40px 60px 40px;
-  }
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
   ul {
     font-size: 30px;
-    position: absolute;
     top: 360px;
     left: 670px;
-    color: gold;
+    color: rgb(125, 221, 69);
   }
 
-  .link-to-resume {
-    position: absolute;/* позиция ссылки */
-    top: 560px;/* позиция ссылки */
-    left: 1250px;/* ссылка на резюме */
-    color: red;/* цвет ссылки */
-}
-
-  .phone {
-    position: absolute;
-    top: 580px;
-    left: 1250px;
-    color: red;
+  .contact-info {
+    text-align:left;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 120px;
+    color: rgb(7, 211, 7);
   }
-
-  .emil {
-    position: absolute;
-    top: 600px;
-    left: 1250px;
-    color: red;
-  }
-
   
+.emil:hover {
+    color: rgb(148, 4, 4);
+    cursor: pointer;
+}
