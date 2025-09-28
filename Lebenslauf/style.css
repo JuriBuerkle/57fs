@@ -22,7 +22,7 @@ body {
     border: 2px solid #4CAF50;
     color: rgb(221, 218, 19);
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .resume-container {
@@ -51,12 +51,31 @@ h1 {
 }
 
 .contact-info {
-    margin: 3%;
+    text-align: right;
     color: rgb(162, 59, 8);
 }
 
-.contact-info p {
-    margin: 5px 0;
+.email:hover {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(162, 59, 8);
+    text-decoration: none;
+}
+
+a > span {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-style: oblique;
+    color: #f0a500;
+}
+
+p > span {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-style: oblique;
+    color: #f0a500;
 }
 
 .profile-photo img {
@@ -64,7 +83,6 @@ h1 {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-
     border: 2px solid orange;
 }
 
@@ -85,12 +103,6 @@ h1 {
     gap: 50px;
 }
 
-p > span {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    font-style: oblique;
-    color: #f0a500;
-}
 
 .entry h3 {
     color: #c36060;
