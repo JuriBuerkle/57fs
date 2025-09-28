@@ -8,21 +8,25 @@ body {
 
 .button {
     position: sticky;
-    top: 10px;
-    left: 110px;
+    top: 20px;
+    margin: 80px;
+    padding: 5px 20px;
+    background-color: #07680a;
+    color: rgb(223, 114, 114);
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 15px;
     cursor: pointer;
-    background-color: #4CAF50;
-    border-radius: 15px;
+    transition: background-color 0.3s ease;
+   
 }
 
 .button:hover {
-    transition: all 0.9s ease;
-    position: sticky;
-    background-color: #046207;
-    border: 2px solid #4CAF50;
-    color: rgb(221, 218, 19);
-    font-size: 15px;
-    padding: 20px 20px;
+    font-size: 10px 20px;
+    color: #91ca16;
+    background-color: #0056b3; 
+    padding: 10px 20px;  
 }
 
 .resume-container {
@@ -118,9 +122,4 @@ p > span {
 .language-levels {
     display: flex;
     gap: 20px;
-}
-
-.language-entry p,
-.language-levels p {
-    margin: 0;
 }
