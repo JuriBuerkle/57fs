@@ -48,11 +48,10 @@ h2 {
   }
 
   .contact-info {
-    text-align:left;
+    text-align: center;
     font-size: 20px;
     margin-top: 50px;
-    margin-left: 120px;
-    color: rgb(7, 211, 7);
+    color: rgb(78, 11, 11);
   }
   
 .emil:hover {
